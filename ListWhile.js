@@ -59,9 +59,43 @@ function quadrado() {
     let numero = 1
     while (numero <= 10) {
         let multipli = numero ** 2
-        alert(multipli)
+        alert("O resultado de 1 a 10 elevado ao quadrado é "+ multipli)
         numero++
     }
 }
 
+//8. Conte de 1 até 10 e mostre o cubo de cada número.
+function cubo(){
+    let numero = 1
+    while(numero <= 10){
+        let multiplique = numero ** 3
+        alert("O resultado de 1 a 10 elevado ao Cubo é "+ multiplique)
+        numero++
+    }
+}
 
+//9. Conte de 1 até 15 e mostre se o número é par ou ímpar.
+function inteiros(){
+    let numero = 1
+    while(numero <= 15){
+        let resto = numero % 2
+        if(resto === 0){
+            alert("Esse é um número Par "+ numero)
+        }else{
+            alert("Esse é um número Ìmpar "+ numero)
+        }
+        numero++
+    }
+}
+
+//10. Conte até 100 e imprima somente os divisíveis por 4.
+function contador(){
+    let soma = 0 
+    let numero = 1
+    while(numero <= 100){
+       numero = soma + numero
+       if(numero % 4 === 0)
+        alert("Os números de 1 a 100 divisíveis por 4 são "+numero)
+       numero++
+    }
+}
