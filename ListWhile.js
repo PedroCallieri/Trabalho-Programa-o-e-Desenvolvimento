@@ -99,3 +99,25 @@ function contador(){
        numero++
     }
 }
+
+//11. Faça um loop que mostre os números de 1 a 10 com a frase “Número: X”
+function numero(){
+    let numero = 1
+    while(numero <= 10){
+        alert("Número: "+numero)
+        numero++
+    }
+}
+
+//12. Conte até 20 e exiba “Fizz” para múltiplos de 3.
+function frizz(){
+    let numero = 1
+    while(numero <= 20){
+        if(soma  % 3 === 0){
+         alert("Número frizz  "+numero)
+        }else{
+            alert("Número não frizz "+numero)
+        }
+        numero++
+    }
+}
