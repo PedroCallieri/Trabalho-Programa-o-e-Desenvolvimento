@@ -1,0 +1,50 @@
+.conteiner_principal{
+    display: flex;  /*faz com que as coisas dentro do "div" seja organizadas lado a lado deixando na mesma margem,pixel e etc */
+    width: 100%;
+    flex-direction: column;
+}
+.titulo{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;      
+    align-items: center;
+}
+.botao_cadastro{
+    background-color: brown;
+    border: none;
+    border-radius: 10px;
+    max-height: 30px;
+    cursor: pointer;
+}
+.conteudo_lista{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+ol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.editar{
+    cursor: pointer;
+}
+.deletar{
+    cursor: pointer;
+}
+.conteudo_cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.conteiner_cadastro{
+    display: none;
+}
