@@ -1,0 +1,74 @@
+#login{
+    display: flex; /* organiza as coisas que estão dentro da div em um padrão */
+    flex-direction: column; /*coloca em colunas */
+    justify-content: center; /*conserta a posição na vertical "esquerda,direita,center e etc" */
+    align-items: center; /*coserta a posiçaõ do elemento na "horizontal cima,baixo,center" */
+    gap: 20px;
+    /* border: 1px solid #666; */
+    border-radius: 10px; /*pra decidir se a borda doelemento vai ser quadrada redonda e etc */
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    min-height: 300px;
+    box-shadow: 0px 0px 10px rgba(60, 255, 0, 0.26);
+}
+
+#cadastro{
+    /* display: flex; */
+    display: none; /* permote que esse elemneto apareça apenas se for selecionado */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid #666; */
+    /* background-color: aqua; */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px; /* da tamanho as bordas*/
+    min-height: 100px;
+    box-shadow: 0px 0px 10px rgba(60, 255, 0, 0.26);
+}
+
+#produtos{
+   display: none;
+   
+
+}
+.containerInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    border-radius: 5px;
+    height: 25px;
+}
+
+button{
+    background-color: #00ff2a; /*coloca cor no elemento */
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+button:hover{
+    background-color: #ff00003b(21, 10, 234);
+    scale: 1.3; /* para decidir o quanto um icone vai crescer ao passar o cursou por cima */
+    /* color: #fff; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 24, 24); 
+    color: white ;
+}
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
