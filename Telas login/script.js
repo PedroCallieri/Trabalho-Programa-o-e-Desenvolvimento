@@ -1,29 +1,31 @@
+//let nomeTeste = []
 
-// let nome, email , senha
 inicializar() 
 
-let usuario = {
-    nome: 'um' ,
-    email: 'dois ',
-    senha: 'nuvem'
-} 
+let usuarios = []
+
 
 function cadastrar(){
-    usuario.nome = document.getElementById('inpCadNome').value 
-    usuario.email = document.getElementById('inpCadEmail').value 
-    usuario.senha = document.getElementById('inpCadSenha').value
-    alert("Cadastrado com sucesso")
-
-    console.log(usuario)
+    let usuario = {
+        nome: document.getElementById('inpCadNome').value,
+        email: document.getElementById('inpCadEmail').value,
+        senha: document.getElementById('inpCadSenha').value,
+    }
+    
+    usuarios.push(usuario)
     limparInput()
     mostrarLogin()
+    
+    alert("Cadastrado com sucesso")
+    
+    console.log(usuarios) //só para teste
 }
 function logar(){
     let nome = document.getElementById('inpLogNome').value
     let senha = document.getElementById('inpLogSenha').value
 
-    if(nome === usuario.nome && senha === usuario.senha){
-        alert("Login feito com sucesso")
+    if((nome === usuario[i].nome || nome === usuario[i].email)&& senha === usuario.senha){
+        alert("Login feito com sucesso"+ usuarios[i].nome)
         limparInput()
         mostrarProduto()
     }else{
@@ -43,6 +45,7 @@ function mostrarCadastro(){
 function mostrarProduto(){
     esconderTodas()
     document.getElementById('produtos').style.display = 'flex'
+    document.getElementById('navbar').style.display = 'flex' //fazendo a navbar reaparecer apos fazer o login
 }
 function esconderTodas(){
     document.getElementById('login').style.display = 'none'
